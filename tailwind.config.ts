@@ -9,9 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background_black: "var(--background_black)",
+        background_light: "var(--background_light)",
+        gold: "var(--gold)"
       },
+      fontFamily: {
+        'barlow-semi-condensed': ['var(--font-barlow-semi-condensed)', 'sans'],
+        'roboto-slab': ['var(--font-roboto-slab)', 'serif']
+      }
     },
   },
   plugins: [],
