@@ -8,7 +8,7 @@ export function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
   const menus = [
-    { title: "Início", path: "/your-path" },
+    { title: "Início", path: "#home" },
     { title: "Serviços", path: "/your-path" },
     { title: "Localização", path: "/your-path" },
     { title: "Galeria", path: "/your-path" },
@@ -54,7 +54,7 @@ export function Header() {
           <div className="p-6 mt-32 md:mt-0 md:border-b border-gold md:p-2 font-barlow-semi-condensed font-normal">
             <nav className="space-y-6 md:space-y-0 md:flex md:gap-10 md:justify-center">
               {menus.map(item => (
-                <a key={item.title} href={item.path} className="block text-2xl md:hover:text-white leading-7">{item.title}</a>
+                <a key={item.title} href={item.path} onClick={() => setIsOpen(false)} className="block text-2xl md:hover:text-white leading-7">{item.title}</a>
               ))}
             </nav>
           </div>
