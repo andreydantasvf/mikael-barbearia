@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { HomePage } from "./components/Home";
+import { Localization } from "./components/Localization";
 import { Services } from "./components/Services";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <main id="home">
         <HomePage />
         <Services />
+        <Localization />
       </main>
     </>
   );
