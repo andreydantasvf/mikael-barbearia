@@ -8,14 +8,27 @@ export function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
   const menus = [
-    { title: "Início", path: "#home" },
-    { title: "Serviços", path: "/your-path" },
-    { title: "Localização", path: "/your-path" },
-    { title: "Galeria", path: "/your-path" },
+    { title: "Início", path: "home" },
+    { title: "Serviços", path: "servicos" },
+    { title: "Localização", path: "localizacao" },
+    { title: "Galeria", path: "galeria" },
   ]
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+
+    if (!section) return;
+    const elementPosition = section.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - 145;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
   };
 
   useEffect(() => {
@@ -54,7 +67,11 @@ export function Header() {
           <div className="p-6 mt-32 md:mt-0 md:border-b border-gold md:p-2 font-barlow-semi-condensed font-normal">
             <nav className="space-y-6 md:space-y-0 md:flex md:gap-10 md:justify-center">
               {menus.map(item => (
-                <a key={item.title} href={item.path} onClick={() => setIsOpen(false)} className="block text-2xl md:hover:text-white leading-7">{item.title}</a>
+                <a key={item.title} onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.path);
+                  setIsOpen(false);
+                }} className="block text-2xl md:hover:text-white leading-7 cursor-pointer">{item.title}</a>
               ))}
             </nav>
           </div>

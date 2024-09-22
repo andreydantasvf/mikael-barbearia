@@ -1,6 +1,6 @@
 export function Gallery() {
   return (
-    <section className="bg-background_light flex items-center flex-col justify-center mt-10 pb-10">
+    <section id="galeria" className="bg-background_light flex items-center flex-col justify-center mt-10 pb-10">
       <div className="max-w-[1440px]">
         <div className="flex flex-col justify-end w-fit">
           <div className="flex gap-3">

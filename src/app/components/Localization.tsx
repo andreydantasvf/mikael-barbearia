@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Localization() {
   return (
-    <section className="bg-background_black flex items-center flex-col justify-center py-10">
+    <section id="localizacao" className="bg-background_black flex items-center flex-col justify-center py-10">
       <div className="max-w-[1440px]">
         <div className="flex flex-col justify-end w-fit">
           <div className="flex gap-3">
