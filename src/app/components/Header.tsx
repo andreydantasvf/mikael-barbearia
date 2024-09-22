@@ -31,7 +31,7 @@ export function Header() {
   }, [isOpen]);
 
   return (
-    <header className={`bg-background_black md:fixed md:w-full ${isOpen ? 'overflow-hidden' : 'overflow-auto'}`}>
+    <header className={`bg-background_black md:fixed md:w-full ${isOpen ? 'overflow-hidden' : 'overflow-auto'} z-50`}>
       <div className="relative">
         <div className="border-b border-gold w-full h-28 fixed z-50 md:border-b-0 md:static md:h-auto bg-background_black">
           <button
