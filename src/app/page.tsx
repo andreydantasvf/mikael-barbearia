@@ -1,3 +1,4 @@
+import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { HomePage } from "./components/Home";
 import { Localization } from "./components/Localization";
@@ -11,6 +12,7 @@ export default function Home() {
         <HomePage />
         <Services />
         <Localization />
+        <Gallery />
       </main>
     </>
   );
