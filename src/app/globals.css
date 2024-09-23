@@ -8,6 +8,10 @@
   --gold: #BF9359
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #373535;
   background: var(--background_light);
