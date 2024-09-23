@@ -14,22 +14,22 @@ export function Services() {
 
         <div className="flex flex-col gap-4 md:gap-20 md:items-center font-barlow-semi-condensed font-bold">
           <div className="flex flex-col md:flex-row gap-4 md:gap-20 mt-10">
-            <div className="bg-[url('/corte.png')] rounded-lg bg-contain bg-center bg-clip-content brightness-50 hover:brightness-100 transition-all duration-300 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-[#A9A9A9] font-bold text-3xl">
-              <div className="brightness-200 flex flex-col items-center">
+            <div className="bg-[url('/corte-dark.png')] hover:bg-[url('/corte.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
+              <div className="flex flex-col items-center brightness-75">
                 <Image src="/pente.svg" alt="Imagem de um pente" width={90} height={90} />
                 <span className="mt-3 block">CORTE</span>
               </div>
             </div>
 
-            <div className="bg-[url('/hidratacao.png')] rounded-lg bg-contain bg-center bg-clip-content brightness-50 hover:brightness-100 transition-all duration-300 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-[#A9A9A9] font-bold text-3xl">
-              <div className="brightness-200 flex flex-col items-center">
+            <div className="bg-[url('/hidratacao-dark.png')] hover:bg-[url('/hidratacao.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
+            <div className="flex flex-col items-center brightness-75">
                 <Image src="/borrifador.svg" alt="Imagem de um pente" width={45} height={45} />
                 <span className="mt-3 block">SELAGEM</span>
               </div>
             </div>
 
-            <div className="bg-[url('/sobrancelha.png')] rounded-lg bg-contain bg-center bg-clip-content brightness-50 hover:brightness-100 transition-all duration-300 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-[#A9A9A9] font-bold text-3xl">
-              <div className="brightness-200 flex flex-col items-center">
+            <div className="bg-[url('/sobrancelha-dark.png')] hover:bg-[url('/sobrancelha.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
+            <div className="flex flex-col items-center brightness-75">
                 <Image src="/navalha.svg" alt="Imagem de um pente" width={90} height={90} />
                 <span className="mt-3 block">SOBRANCELHA</span>
               </div>
@@ -37,15 +37,15 @@ export function Services() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 md:gap-20">
-            <div className="bg-[url('/barba.png')] rounded-lg bg-contain bg-center bg-clip-content brightness-50 hover:brightness-100 transition-all duration-300 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-[#A9A9A9] font-bold text-3xl">
-              <div className="brightness-200 flex flex-col items-center">
+          <div className="bg-[url('/barba-dark.png')] hover:bg-[url('/barba.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
+          <div className="flex flex-col items-center brightness-75">
                 <Image src="/tesoura.svg" alt="Imagem de um pente" width={90} height={90} />
                 <span className="mt-3 block">BARBA</span>
               </div>
             </div>
 
-            <div className="bg-[url('/luzes.png')] rounded-lg bg-contain bg-center bg-clip-content brightness-50 hover:brightness-100 transition-all duration-300 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-[#A9A9A9] font-bold text-3xl">
-              <div className="brightness-200 flex flex-col items-center">
+            <div className="bg-[url('/luzes-dark.png')] hover:bg-[url('/luzes.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
+            <div className="flex flex-col items-center brightness-75">
                 <Image src="/pincel.svg" alt="Imagem de um pente" width={60} height={60} />
                 <span className="mt-3 block">LUZES</span>
               </div>
