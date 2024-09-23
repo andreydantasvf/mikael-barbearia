@@ -71,7 +71,7 @@ export function Header() {
                   e.preventDefault();
                   scrollToSection(item.path);
                   setIsOpen(false);
-                }} className="block text-2xl md:hover:text-white leading-7 cursor-pointer">{item.title}</a>
+                }} className="block text-2xl md:hover:text-white duration-500 transition-all leading-7 cursor-pointer">{item.title}</a>
               ))}
             </nav>
           </div>
