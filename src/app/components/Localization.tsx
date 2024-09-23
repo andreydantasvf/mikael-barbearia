@@ -8,7 +8,7 @@ export function Localization() {
         <div className="flex flex-col justify-end w-fit font-barlow-semi-condensed">
           <div className="flex gap-3">
             <div className="bg-gold w-7 md:w-14 h-3 md:h-6 rounded-xl mt-3"></div>
-            <h2 className="text-3xl md:text-6xl font-bold mb-2 text-slate-200">Localização</h2>
+            <h2 className="text-3xl md:text-6xl font-bold mb-2 text-[#DCDCDC]">Localização</h2>
           </div>
           <span className="text-[#8C8C8C] ml-8 md:ml-16 md:text-2xl">Encontre a Barbearia</span>
         </div>
