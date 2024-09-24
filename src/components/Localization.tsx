@@ -21,9 +21,9 @@ export function Localization() {
 
             </div>
 
-            <Link href="https://maps.app.goo.gl/qMbitsmqHHyPf5wC6" className="flex items-center gap-2 text-[#C9C9C9] underline font-bold text-base mt-4 md:hidden">
+            <a href="https://maps.app.goo.gl/qMbitsmqHHyPf5wC6" className="flex items-center gap-2 text-[#C9C9C9] underline font-bold text-base mt-4 md:hidden">
               <MapPin className="text-gold" /> Via Google Maps
-            </Link>
+            </a>
 
             <div className="space-y-3 mt-6 text-[#8C8C8C] md:text-2xl font-roboto-slab">
               <div>
