@@ -4,8 +4,8 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export function HomePage() {
   return (
-    <div className="bg-background_black h-[90vh] md:h-[85vh] flex items-center justify-center md:pt-32">
-      <div className="max-w-[1440px] mt-20 md:mt-0 px-12 md:px-0 flex flex-col md:flex-row-reverse md:gap-16 justify-center md:justify-between items-center space-y-8">
+    <div className="bg-background_black h-[90vh] md:h-[50rem] flex items-center justify-center md:pt-32">
+      <div className="max-w-[1440px] md:w-full mt-20 md:mt-0 px-12 md:px-20 flex flex-col md:flex-row-reverse md:gap-16 justify-center md:justify-between items-center space-y-8">
         <Image alt="Foto de exemplo" src="/exemplo_barbeiro.png" width={513} height={340} quality={100} />
 
         <div className="flex flex-col items-start">

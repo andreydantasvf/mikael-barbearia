@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Services() {
   return (
     <section id="servicos" className="bg-background_light flex items-center flex-col justify-center mt-10 pb-10">
-      <div className="max-w-[1440px]">
+      <div className="max-w-[1440px] md:w-full md:mx-52 md:px-20">
         <div className="flex flex-col justify-end w-fit font-barlow-semi-condensed">
           <div className="flex gap-3">
             <div className="bg-gold w-7 md:w-14 h-3 md:h-6 rounded-xl mt-3"></div>
@@ -13,7 +13,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col gap-4 md:gap-20 md:items-center font-barlow-semi-condensed font-bold">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-20 mt-10">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-20 mt-10">
             <div className="bg-[url('/corte-dark.png')] hover:bg-[url('/corte.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
               <div className="flex flex-col items-center brightness-75">
                 <Image src="/pente.svg" alt="Imagem de um pente" width={90} height={90} />
@@ -36,7 +36,7 @@ export function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4 md:gap-20">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-20">
           <div className="bg-[url('/barba-dark.png')] hover:bg-[url('/barba.png')] rounded-lg bg-contain bg-center bg-clip-content transition-all duration-700 hover:brightness-150 ease-in-out w-60 md:w-72 h-40 md:h-48 flex flex-col items-center justify-center gap-2 text-white font-bold text-3xl">
           <div className="flex flex-col items-center brightness-75">
                 <Image src="/tesoura.svg" alt="Imagem de um pente" width={90} height={90} />

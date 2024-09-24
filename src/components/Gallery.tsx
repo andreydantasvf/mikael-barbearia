@@ -1,7 +1,7 @@
 export function Gallery() {
   return (
     <section id="galeria" className="bg-background_black flex items-center flex-col justify-center py-10">
-      <div className="max-w-[1440px]">
+      <div className="max-w-[1440px] md:w-full md:mx-52 md:px-20">
         <div className="flex flex-col justify-end w-fit font-barlow-semi-condensed">
           <div className="flex gap-3">
             <div className="bg-gold w-7 md:w-14 h-3 md:h-6 rounded-xl mt-3"></div>
@@ -11,7 +11,7 @@ export function Gallery() {
         </div>
 
 
-        <div className="mt-10 grid gap-2 md:gap-8 grid-cols-[64px_64px_64px] grid-rows-[64px_64px] md:grid-cols-[264px_264px_264px] md:grid-rows-[264px_264px] auto-cols-[64px] md:auto-cols-[264px] auto-rows-[64px] md:auto-rows-[264px] text-gray-700">
+        <div className="mt-10 grid gap-2 md:gap-8 grid-cols-[64px_64px_64px] grid-rows-[64px_64px] md:grid-cols-[1fr_1fr_1fr] md:grid-rows-[264px_264px] auto-cols-[64px] md:auto-cols-[264px] auto-rows-[64px] md:auto-rows-[264px] text-gray-700">
           <div className="bg-[url('/barba.png')] bg-no-repeat bg-cover bg-center rounded p-5 col-start-1 col-span-2 row-span-2"></div>
           <div className="bg-[url('/corte.png')] bg-no-repeat bg-cover bg-center rounded p-5 col-span-1 col-start-3 row-start-1 row-span-2"></div>
           <div className="bg-[url('/hidratacao.png')] bg-no-repeat bg-cover bg-center rounded p-5 col-start-4 row-start-1 row-span-1"></div>
