@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-background_black flex items-center flex-col justify-center pt-8 pb-4">
+    <footer className="bg-background_black flex items-center flex-col justify-center pt-8 pb-4 border-t border-gold">
       <div className="max-w-[1440px]">
         <div className="text-xs text-[#8C8C8C] font-roboto-slab">
           <div className="flex justify-between gap-3 md:gap-72 text-[8px] md:text-lg font-roboto-slab">
@@ -23,7 +23,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center md:justify-between mt-12 md:mt-28 md:text-lg">
+          <div className="flex items-center justify-center md:justify-between mt-10 md:mt-28 md:text-lg">
             <Image className="hidden md:block" src='/logo.svg' alt="Logo da barbearia de Mikael" width={92} height={92} />
             <span>2024 © Mikael Barbearia - Todos os direitos reservados.</span>
           </div>

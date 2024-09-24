@@ -1,13 +1,13 @@
 export function Gallery() {
   return (
-    <section id="galeria" className="bg-background_light flex items-center flex-col justify-center py-10">
+    <section id="galeria" className="bg-background_black flex items-center flex-col justify-center py-10">
       <div className="max-w-[1440px]">
         <div className="flex flex-col justify-end w-fit font-barlow-semi-condensed">
           <div className="flex gap-3">
             <div className="bg-gold w-7 md:w-14 h-3 md:h-6 rounded-xl mt-3"></div>
-            <h2 className="text-3xl md:text-6xl font-bold mb-2">Galeria</h2>
+            <h2 className="text-3xl md:text-6xl font-bold mb-2 text-[#DCDCDC]">Galeria</h2>
           </div>
-          <span className="text-[#373535] text-right justify-self-end ml-8 md:ml-16 md:text-2xl">Fotos do meu trabalho</span>
+          <span className="text-[#8C8C8C] text-right justify-self-end ml-8 md:ml-16 md:text-2xl">Fotos do meu trabalho</span>
         </div>
 
 
