@@ -24,7 +24,7 @@ export function DatePicker() {
         <Button
           variant={"outline"}
           className={cn(
-            "w-full p-4 py-6 text-lg border border-A19D9D bg-[#F9F9F9] rounded-md justify-start text-left font-normal",
+            "w-full p-2 md:p-4 py-4 md:py-6 text-sm md:text-base border border-A19D9D bg-[#F9F9F9] rounded-md justify-start text-left font-normal",
             !date && "text-muted-foreground"
           )}
         >
