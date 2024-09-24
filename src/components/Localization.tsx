@@ -13,10 +13,10 @@ export function Localization() {
           <span className="text-[#8C8C8C] ml-8 md:ml-16 md:text-2xl">Encontre a Barbearia</span>
         </div>
 
-        <div className="flex flex-col items-center justify-center md:flex-row mt-10 md:gap-24">
+        <div className="flex flex-col items-center md:items-start justify-center md:flex-row mt-10 md:gap-24">
           <iframe className="hidden md:flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.629433931269!2d-37.282374615672396!3d-7.052755650915822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7af5fe047314a55%3A0x65f1930a956ba7f2!2sR.%20Manoel%20Reinaldo%2C%2033%20-%20Jatob%C3%A1%2C%20Patos%20-%20PB%2C%2058707-420!5e0!3m2!1spt-BR!2sbr!4v1726965253604!5m2!1spt-BR!2sbr" width="600" height="450" allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
-          <div className="flex flex-col items-center justify-center md:items-start" >
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-between md:h-[450px]" >
             <div className="bg-slate-400 w-72 md:w-96 h-40 md:h-60">
 
             </div>
@@ -32,7 +32,7 @@ export function Localization() {
               </div>
 
               <div>
-                <p>Seg-Sex: 8:30h às 21:00h</p>
+                <p>Seg-Sex: 8:30h às 19:00h</p>
                 <p>Sáb: 8:30h às 12:00h</p>
               </div>
             </div>

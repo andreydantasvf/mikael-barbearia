@@ -13,12 +13,12 @@ export function Footer() {
             </div>
             <div className="text-left">
               <p className="text-[10px] md:text-2xl md:mb-4 font-bold"><strong>CONTATO</strong></p>
-              <p>(83) 98193-6151</p>
-              <p>mikael@email.com</p>
+              <a href="tel:8398193-6151" className="md:hover:text-white duration-500 transition-all cursor-pointer block">(83) 98193-6151</a>
+              <a href="mailto:mikaelbarbearia@gmail.com" className="md:hover:text-white duration-500 transition-all cursor-pointer block">mikaelbarbearia@gmail.com</a>
             </div>
             <div className="text-left">
               <p className="text-[10px] md:text-2xl md:mb-4 font-bold"><strong>HORÁRIOS</strong></p>
-              <p>Seg-Sex: 8:30h às 21:00h</p>
+              <p>Seg-Sex: 8:30h às 19:00h</p>
               <p>Sáb: 8:30h às 12:00h</p>
             </div>
           </div>

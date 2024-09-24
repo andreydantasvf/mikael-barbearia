@@ -32,7 +32,7 @@ export function Scheduling() {
             <div className="bg-gold w-7 md:w-14 h-3 md:h-6 rounded-xl mt-3"></div>
             <h2 className="text-3xl md:text-6xl font-bold mb-2">Agendamento</h2>
           </div>
-          <span className="text-[#373535] text-right justify-self-end ml-8 md:ml-16 md:text-2xl">Deseja agendar algum serviço?</span>
+          <span className="text-[#373535] text-right md:text-left ml-8 md:ml-16 md:text-2xl">Deseja agendar algum serviço?</span>
         </div>
 
         <div className="w-full flex items-center justify-center">
