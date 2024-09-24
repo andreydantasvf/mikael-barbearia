@@ -11,6 +11,7 @@ export function Header() {
     { title: "Início", path: "home" },
     { title: "Serviços", path: "servicos" },
     { title: "Localização", path: "localizacao" },
+    { title: "Agendamento", path: "agendamento" },
     { title: "Galeria", path: "galeria" },
   ]
 
