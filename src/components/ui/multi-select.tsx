@@ -244,7 +244,7 @@ export const MultiSelect = React.forwardRef<
                       )}
                       style={{ animationDuration: `${animation}s` }}
                     >
-                      {`+ ${selectedValues.length - maxCount} more`}
+                      {`+ ${selectedValues.length - maxCount} serviços`}
                       <XCircle
                         className="ml-2 h-4 w-4 cursor-pointer"
                         onClick={(event) => {
