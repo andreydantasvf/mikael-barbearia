@@ -37,8 +37,8 @@ export function Scheduling() {
 
         <div className="w-full flex items-center justify-center">
           <div className="w-72 md:w-[34rem] pb-5 md:pb-14 bg-white border border-[9B9EA3] rounded-md mt-10 relative flex flex-col">
-            <div className="absolute -left-3 top-7">
-              <Image className="h-[21rem] md:h-[31rem] w-6" src="/ideia-caderno.svg" alt="lateral de caderno"  width='0' height='0' sizes="100vw" quality={100} />
+            <div className="absolute -left-3 top-7 h-full">
+              <Image className="h-[90%] w-6" src="/ideia-caderno.svg" alt="lateral de caderno"  width='0' height='0' sizes="100vw" quality={100} />
             </div>
 
             <form action="" className="text-sm md:text-base mx-7 md:mx-14 mt-5 md:mt-11 font-barlow-semi-condensed flex flex-col items-center gap-4 md:gap-6">

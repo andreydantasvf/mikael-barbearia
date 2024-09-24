@@ -15,7 +15,7 @@ export function HomePage() {
 
           <p className="leading-normal tracking-wider text-[#DCDCDC] mt-3 md:mt-6 text-left text-sm md:text-xl font-roboto-slab">Entre como você é, saia como você quer ser!</p>
 
-          <p className="leading-normal md:max-w-[80%] text-[#DCDCDC] mt-3 md:mt-6 mb-6 md:mb-12 text-left text-xs md:text-sm font-roboto-slab">A melhor barbearia de Patos-PB: cortes modernos, barba feita e uma experiência única. Agende já!</p>
+          <p className="leading-normal md:max-w-[80%] text-[#8B8B8B] mt-3 md:mt-6 mb-6 md:mb-12 text-left text-xs md:text-sm font-roboto-slab">A melhor barbearia de Patos-PB: cortes modernos, barba feita e uma experiência única. Agende já!</p>
 
           <button onClick={(e) => {
             e.preventDefault();

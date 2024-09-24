@@ -57,7 +57,7 @@ export function Header() {
 
           <div className="fixed top-4 md:static md:top-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 mb-8 md:mb-0 flex items-center justify-center z-50">
             <Link href="/">
-              <Image src='/logo.svg' alt="Logo da barbearia de Mikael" width={92} height={92} />
+              <Image src='/logo.svg' alt="Logo da barbearia de Mikael" width={100} height={100} />
             </Link>
           </div>
         </div>
@@ -65,14 +65,14 @@ export function Header() {
           className={`fixed bg-background_black top-0 left-0 h-full w-full text-white md:text-[#8C8C8C] transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
             } transition-transform duration-300 ease-in-out z-40 md:static md:top-auto md:left-auto md:translate-x-0`}
         >
-          <div className="p-6 mt-32 md:mt-0 md:border-b border-gold md:p-2 font-barlow-semi-condensed font-normal">
-            <nav className="space-y-6 md:space-y-0 md:flex md:gap-10 md:justify-center">
+          <div className="p-6 mt-32 md:mt-0 md:border-b border-gold md:py-2 md:px-0 font-barlow-semi-condensed font-normal">
+            <nav className="space-y-6 md:space-y-0 md:flex md:gap-11 md:justify-center md:pl-14">
               {menus.map(item => (
                 <a key={item.title} onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(item.path);
                   setIsOpen(false);
-                }} className="block text-2xl md:hover:text-white duration-500 transition-all leading-7 cursor-pointer">{item.title}</a>
+                }} className="block text-2xl md:leading-normal md:hover:text-white duration-500 transition-all leading-7 cursor-pointer">{item.title}</a>
               ))}
             </nav>
           </div>
