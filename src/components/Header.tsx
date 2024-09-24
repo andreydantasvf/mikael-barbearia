@@ -4,6 +4,19 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react"
 
+export function scrollToSection(id: string) {
+  const section = document.getElementById(id);
+
+  if (!section) return;
+  const elementPosition = section.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.scrollY - 145;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+};
+
 export function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +30,6 @@ export function Header() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-
-    if (!section) return;
-    const elementPosition = section.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - 145;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
   };
 
   useEffect(() => {
