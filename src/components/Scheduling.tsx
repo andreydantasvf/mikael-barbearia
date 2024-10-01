@@ -8,6 +8,8 @@ import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { PiPaintBrushHouseholdFill } from "react-icons/pi";
 import { GiRazor } from "react-icons/gi";
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 const servicesList = [
   { value: "cabelo", label: "Cabelo", icon: RxScissors, price: 20 },
@@ -19,6 +21,12 @@ const servicesList = [
 
 export function Scheduling() {
   const [selectedServices, setSelectedServices] = useState<string[]>(["cabelo"]);
+  const [name, setName] = useState<string>("");
+  const [date, setDate] = useState<Date>(new Date());
+
+  const formattedDate = format(date, "d 'de' MMMM 'de' yyyy", { locale: ptBR });
+  const services = selectedServices.join(", ");
+  const message = `Me chamo ${name} e quero marcar um agendamento de ${services} para o dia ${formattedDate}. Possui disponibilidade?`;
 
   const totalValue = servicesList
     .filter(service => selectedServices.includes(service.value))
@@ -38,18 +46,18 @@ export function Scheduling() {
         <div className="w-full flex items-center justify-center">
           <div className="w-72 md:w-[34rem] pb-5 md:pb-14 bg-white border border-[9B9EA3] rounded-md mt-10 relative flex flex-col">
             <div className="absolute -left-3 top-7 h-full">
-              <Image className="h-[90%] w-6" src="/ideia-caderno.svg" alt="lateral de caderno"  width='0' height='0' sizes="100vw" quality={100} />
+              <Image className="h-[90%] w-6" src="/ideia-caderno.svg" alt="lateral de caderno" width='0' height='0' sizes="100vw" quality={100} />
             </div>
 
             <form action="" className="text-sm md:text-base mx-7 md:mx-14 mt-5 md:mt-11 font-barlow-semi-condensed flex flex-col items-center gap-4 md:gap-6">
               <div className="w-full space-y-1 md:space-y-2">
                 <label htmlFor="name" className="text-[5F6368] font-bold">Nome</label>
-                <input className="border border-A19D9D bg-[#F9F9F9] w-full p-2 md:p-4 rounded-md" type="text" name="name" id="name" placeholder="Digite o seu Nome" />
+                <input onChange={(e) => setName(e.target.value)} className="border border-A19D9D bg-[#F9F9F9] w-full p-2 md:p-4 rounded-md" type="text" name="name" id="name" placeholder="Digite o seu Nome" />
               </div>
 
               <div className="w-full space-y-1 md:space-y-2">
                 <label htmlFor="date" className="text-[5F6368] font-bold">Selecione uma data</label>
-                <DatePicker />
+                <DatePicker date={date} setDate={setDate} />
               </div>
 
               <div className="w-full space-y-1 md:space-y-2">
@@ -68,7 +76,14 @@ export function Scheduling() {
             </form>
 
             <div className="flex justify-center items-center mt-10 md:mt-12">
-              <button className="max-h-14 rounded-md font-roboto-slab bg-gold text-[#373535] font-bold p-3 md:p-4 text-xs flex items-center gap-2 md:text-base hover:bg-[#F9B256] transition-all ease-in-out duration-300">SOLICITAR AGENDAMENTO <FaWhatsapp className="mb-1" size={20} /></button>
+              <a
+                href={`https://api.whatsapp.com/send?phone=+5583981936151&text=${message}`}
+                target="_blank"
+                className="max-h-14 rounded-md font-roboto-slab bg-gold text-[#373535] font-bold p-3 md:p-4 text-xs flex items-center gap-2 md:text-base hover:bg-[#F9B256] transition-all ease-in-out duration-300"
+              >
+                SOLICITAR AGENDAMENTO
+                <FaWhatsapp className="mb-1" size={20} />
+              </a>
             </div>
           </div>
         </div>
