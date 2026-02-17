@@ -77,7 +77,7 @@ export function Scheduling() {
 
             <div className="flex justify-center items-center mt-10 md:mt-12">
               <a
-                href={`https://api.whatsapp.com/send?phone=+5583981936151&text=${message}`}
+                href={`https://api.whatsapp.com/send?phone=+558391236151&text=${message}`}
                 target="_blank"
                 className="max-h-14 rounded-md font-roboto-slab bg-gold text-[#373535] font-bold p-3 md:p-4 text-xs flex items-center gap-2 md:text-base hover:bg-[#F9B256] transition-all ease-in-out duration-300"
               >
